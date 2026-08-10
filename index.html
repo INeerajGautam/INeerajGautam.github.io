@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Neeraj Gautam | Environmental Economist</title>
+<meta name="description" content="Environmental economist specialising in Nature-Based Solutions, Payment for Ecosystem Services, and climate finance.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#14261d;         /* deep forest ink */
+    --paper:#f7f4ec;       /* warm paper */
+    --paper-2:#efeadd;     /* card paper */
+    --moss:#4a6b4a;        /* moss green */
+    --moss-dark:#33513a;
+    --clay:#b56a44;        /* earthen clay accent */
+    --water:#3f6f78;       /* watershed teal */
+    --line:#d8d0bf;        /* hairline */
+    --muted:#6a6a5c;
+    --display:"Fraunces",Georgia,serif;
+    --body:"Inter",system-ui,sans-serif;
+    --mono:"IBM Plex Mono",monospace;
+    --maxw:1080px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:var(--body);
+    line-height:1.65;
+    font-size:17px;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit;text-decoration:none}
+  img{max-width:100%;display:block}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
+
+  /* ---------- NAV ---------- */
+  header.nav{
+    position:sticky;top:0;z-index:50;
+    background:rgba(247,244,236,.85);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav-inner{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .brand{font-family:var(--display);font-weight:600;font-size:19px;letter-spacing:-.01em}
+  .brand span{color:var(--moss)}
+  nav ul{display:flex;gap:30px;list-style:none}
+  nav a{font-size:14px;color:var(--muted);transition:color .2s}
+  nav a:hover{color:var(--ink)}
+  .nav-links{display:flex;gap:30px;align-items:center}
+  .menu-btn{display:none;background:none;border:none;font-size:22px;cursor:pointer;color:var(--ink)}
+  @media(max-width:760px){
+    nav ul{display:none}
+    .menu-btn{display:block}
+  }
+
+  /* ---------- HERO ---------- */
+  .hero{padding:90px 0 70px;position:relative;overflow:hidden}
+  .eyebrow{font-family:var(--mono);font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--clay);margin-bottom:22px}
+  .hero h1{
+    font-family:var(--display);
+    font-weight:600;
+    font-size:clamp(36px,6vw,68px);
+    line-height:1.02;
+    letter-spacing:-.02em;
+    max-width:14ch;
+    margin-bottom:26px;
+  }
+  .hero h1 em{font-style:italic;color:var(--moss)}
+  .hero p.lede{font-size:19px;color:var(--muted);max-width:52ch;margin-bottom:34px}
+  .cta-row{display:flex;gap:14px;flex-wrap:wrap}
+  .btn{
+    font-family:var(--body);font-size:15px;font-weight:500;
+    padding:13px 24px;border-radius:2px;cursor:pointer;transition:all .2s;
+    border:1px solid var(--ink);
+  }
+  .btn-solid{background:var(--ink);color:var(--paper)}
+  .btn-solid:hover{background:var(--moss-dark);border-color:var(--moss-dark)}
+  .btn-ghost{background:transparent;color:var(--ink)}
+  .btn-ghost:hover{background:var(--paper-2)}
+  .hero-meta{display:flex;gap:40px;margin-top:56px;flex-wrap:wrap}
+  .hero-meta div{border-left:2px solid var(--clay);padding-left:14px}
+  .hero-meta .k{font-family:var(--display);font-size:22px;font-weight:600}
+  .hero-meta .l{font-size:13px;color:var(--muted)}
+
+  /* decorative contour lines */
+  .contour{position:absolute;right:-120px;top:40px;width:520px;opacity:.5;pointer-events:none}
+  @media(max-width:900px){.contour{display:none}}
+
+  /* ---------- SECTION SCAFFOLD ---------- */
+  section{padding:78px 0;border-top:1px solid var(--line)}
+  .sec-label{font-family:var(--mono);font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--water);margin-bottom:16px}
+  .sec-title{font-family:var(--display);font-weight:600;font-size:clamp(26px,3.6vw,40px);line-height:1.1;letter-spacing:-.015em;max-width:20ch;margin-bottom:20px}
+  .sec-intro{color:var(--muted);max-width:60ch;margin-bottom:44px;font-size:18px}
+
+  /* ---------- ABOUT ---------- */
+  .about-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:46px;align-items:start}
+  @media(max-width:820px){.about-grid{grid-template-columns:1fr}}
+  .about-lead{font-family:var(--display);font-size:23px;line-height:1.4;font-weight:400;margin-bottom:22px}
+  .about-grid p{color:var(--muted);margin-bottom:16px}
+  .value-cards{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:var(--line);border:1px solid var(--line)}
+  .vc{background:var(--paper);padding:22px 20px}
+  .vc .n{font-family:var(--mono);font-size:12px;color:var(--clay)}
+  .vc h4{font-family:var(--display);font-size:17px;font-weight:600;margin:6px 0 6px}
+  .vc p{font-size:14px;color:var(--muted);margin:0}
+  @media(max-width:480px){.value-cards{grid-template-columns:1fr}}
+
+  /* ---------- EXPERIENCE TIMELINE ---------- */
+  .timeline{position:relative}
+  .job{
+    display:grid;grid-template-columns:180px 1fr;gap:30px;
+    padding:26px 0;border-top:1px solid var(--line);
+  }
+  .job:first-child{border-top:none}
+  .job .when{font-family:var(--mono);font-size:13px;color:var(--muted);padding-top:4px}
+  .job h3{font-family:var(--display);font-size:21px;font-weight:600;letter-spacing:-.01em}
+  .job .org{color:var(--moss);font-weight:500;font-size:15px;margin:2px 0 12px}
+  .job details{margin-top:6px}
+  .job summary{cursor:pointer;font-size:14px;color:var(--clay);font-weight:500;list-style:none;display:inline-flex;align-items:center;gap:6px}
+  .job summary::-webkit-details-marker{display:none}
+  .job summary::after{content:"→";transition:transform .2s}
+  .job details[open] summary::after{transform:rotate(90deg)}
+  .job ul{margin:14px 0 0;padding-left:18px}
+  .job li{font-size:14.5px;color:var(--muted);margin-bottom:9px}
+  .job li b{color:var(--ink);font-weight:600}
+  @media(max-width:680px){.job{grid-template-columns:1fr;gap:8px}}
+
+  /* ---------- PROJECTS ---------- */
+  .proj-grid{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:var(--line);border:1px solid var(--line)}
+  @media(max-width:720px){.proj-grid{grid-template-columns:1fr}}
+  .proj{background:var(--paper);padding:28px 26px;transition:background .2s}
+  .proj:hover{background:var(--paper-2)}
+  .proj .code{font-family:var(--mono);font-size:12px;color:var(--water)}
+  .proj h3{font-family:var(--display);font-size:19px;font-weight:600;margin:8px 0 10px;line-height:1.25}
+  .proj p{font-size:14.5px;color:var(--muted);margin-bottom:14px}
+  .tags{display:flex;flex-wrap:wrap;gap:7px}
+  .tag{font-family:var(--mono);font-size:11px;background:var(--paper-2);border:1px solid var(--line);padding:4px 9px;border-radius:2px;color:var(--ink)}
+  .proj:hover .tag{background:var(--paper)}
+
+  /* ---------- SKILLS ---------- */
+  .skill-cols{display:grid;grid-template-columns:repeat(3,1fr);gap:34px}
+  @media(max-width:720px){.skill-cols{grid-template-columns:1fr}}
+  .skill-cols h4{font-family:var(--mono);font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--clay);margin-bottom:16px;padding-bottom:10px;border-bottom:1px solid var(--line)}
+  .skill-cols ul{list-style:none}
+  .skill-cols li{font-size:15px;padding:7px 0;color:var(--ink);border-bottom:1px dotted var(--line)}
+
+  /* ---------- EDUCATION ---------- */
+  .edu-item{display:grid;grid-template-columns:160px 1fr;gap:30px;padding:22px 0;border-top:1px solid var(--line)}
+  .edu-item:first-of-type{border-top:none}
+  .edu-item .yr{font-family:var(--mono);font-size:13px;color:var(--muted)}
+  .edu-item h3{font-family:var(--display);font-size:19px;font-weight:600}
+  .edu-item .inst{color:var(--moss);font-size:14.5px;margin-top:2px}
+  .edu-item .note{font-size:14px;color:var(--muted);margin-top:4px}
+  @media(max-width:680px){.edu-item{grid-template-columns:1fr;gap:6px}}
+  .certs{margin-top:40px}
+  .certs h4{font-family:var(--mono);font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--clay);margin-bottom:16px}
+  .cert-list{display:flex;flex-wrap:wrap;gap:10px}
+  .cert{font-size:13.5px;background:var(--paper-2);border:1px solid var(--line);padding:8px 14px;border-radius:2px}
+
+  /* ---------- CONTACT ---------- */
+  .contact{background:var(--ink);color:var(--paper);border-top:none}
+  .contact .sec-label{color:#9ec49e}
+  .contact .sec-title{color:var(--paper)}
+  .contact .sec-intro{color:#c9c9bd}
+  .contact-links{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:#25392e;border:1px solid #25392e;max-width:640px}
+  @media(max-width:520px){.contact-links{grid-template-columns:1fr}}
+  .cl{background:var(--ink);padding:20px 22px;transition:background .2s}
+  .cl:hover{background:#1b2f24}
+  .cl .lbl{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#9ec49e}
+  .cl .val{font-size:15px;margin-top:5px;word-break:break-word}
+  .avail{margin-top:32px;font-size:14px;color:#c9c9bd}
+  .avail b{color:var(--paper)}
+
+  footer{background:var(--ink);color:#9a9a8c;padding:28px 0;border-top:1px solid #25392e;font-size:13px}
+  .footer-inner{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+
+  /* reveal on scroll */
+  .reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+  .reveal.in{opacity:1;transform:none}
+  @media(prefers-reduced-motion:reduce){
+    .reveal{opacity:1;transform:none;transition:none}
+    html{scroll-behavior:auto}
+  }
+</style>
+</head>
+<body>
+<a id="top"></a>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <div class="brand">Neeraj <span>Gautam</span></div>
+    <div class="nav-links">
+      <nav><ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul></nav>
+    </div>
+    <button class="menu-btn" aria-label="Menu" onclick="document.querySelector('nav ul').style.display=(document.querySelector('nav ul').style.display==='flex'?'none':'flex')">☰</button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" style="border-top:none">
+  <svg class="contour" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <g stroke="#4a6b4a" stroke-width="1" opacity="0.9">
+      <path d="M40 200 Q140 120 200 200 T360 200"/>
+      <path d="M30 230 Q140 140 200 230 T370 230"/>
+      <path d="M50 170 Q140 100 200 170 T350 170"/>
+      <path d="M60 260 Q150 190 200 260 T340 260"/>
+      <path d="M70 140 Q150 90 200 140 T330 140"/>
+      <ellipse cx="200" cy="200" rx="18" ry="12" stroke="#b56a44"/>
+    </g>
+  </svg>
+  <div class="wrap">
+    <div class="eyebrow">Environmental Economist · Nature-Based Solutions</div>
+    <h1>Putting a fair <em>value</em> on nature, so people are paid to protect it.</h1>
+    <p class="lede">Seven years turning ecosystem science into workable economics — designing Payment for Ecosystem Services schemes, restoring watersheds and forests, and building the climate finance that keeps them going.</p>
+    <div class="cta-row">
+      <a class="btn btn-solid" href="#experience">Explore my work</a>
+      <a class="btn btn-ghost" href="#contact">Get in touch</a>
+    </div>
+    <div class="hero-meta">
+      <div><div class="k">7 years</div><div class="l">across India & Rwanda</div></div>
+      <div><div class="k">PES & NBS</div><div class="l">design and delivery</div></div>
+      <div><div class="k">MBA</div><div class="l">Conservation Management</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="wrap">
+    <div class="sec-label">01 · About</div>
+    <h2 class="sec-title">An economist who works where ecology meets livelihoods.</h2>
+    <div class="about-grid reveal">
+      <div>
+        <p class="about-lead">I'm an environmental economist passionate about climate change and sustainability, working at the point where nature, communities and economics meet.</p>
+        <p>Over seven years I've worked extensively across watershed and wetland restoration, forest bioeconomy, livelihoods and climate finance — with hands-on experience in project management and coordination. My work has spanned Payment for Ecosystem Services design, ecosystem-service valuation, and building incentive models that make conservation pay for the people living closest to the land.</p>
+        <p>I began with an engineering foundation, then moved into conservation management, and I've since carried that blend of analytical rigour and on-the-ground pragmatism from the forests of Madhya Pradesh to catchment restoration work in Rwanda.</p>
+      </div>
+      <div class="value-cards">
+        <div class="vc"><div class="n">01</div><h4>Valuation</h4><p>Turning ecosystem services into numbers decision-makers can act on.</p></div>
+        <div class="vc"><div class="n">02</div><h4>Incentives</h4><p>Designing PES and carbon models that reward stewardship.</p></div>
+        <div class="vc"><div class="n">03</div><h4>Delivery</h4><p>Coordinating budgets, donors and partners to keep projects on track.</p></div>
+        <div class="vc"><div class="n">04</div><h4>Partnership</h4><p>Working with governments, communities and private stakeholders alike.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="wrap">
+    <div class="sec-label">02 · Experience</div>
+    <h2 class="sec-title">A path through research, government and green-growth institutions.</h2>
+    <p class="sec-intro">Follow the timeline and open each role to see the work, responsibilities and outcomes behind it.</p>
+
+    <div class="timeline">
+      <div class="job reveal">
+        <div class="when">Jun 2025 – Present</div>
+        <div>
+          <h3>Environmental Economist</h3>
+          <div class="org">Global Green Growth Institute (GGGI) · Kigali, Rwanda</div>
+          <details>
+            <summary>View details</summary>
+            <ul>
+              <li><b>PES scheme design:</b> Lead the design of a Payment for Ecosystem Services scheme to incentivise sustainable natural-resource management, applying lessons from prior incentive-based work in India.</li>
+              <li><b>Project management:</b> Coordinate day-to-day planning, implementation and delivery of the PES workstream, on time and within budget.</li>
+              <li><b>Project development:</b> Prepare concept notes for wetland and catchment restoration, alongside new forest-bioeconomy and land-restoration initiatives.</li>
+              <li><b>Governance & advocacy:</b> Lead the PES governance framework and drive adoption with government and private-sector stakeholders.</li>
+              <li><b>Economic analysis:</b> Conduct ecosystem-service valuation to inform scheme design under a pre-feasibility study.</li>
+              <li><b>Budget, donor & MEL:</b> Monitor expenditure, lead donor reporting, and serve as interim Monitoring, Evaluation and Learning focal point.</li>
+            </ul>
+          </details>
+        </div>
+      </div>
+
+      <div class="job reveal">
+        <div class="when">Nov 2021 – Jun 2025</div>
+        <div>
+          <h3>Senior Project Assistant</h3>
+          <div class="org">Global Green Growth Institute (GGGI) · New Delhi / Madhya Pradesh, India</div>
+          <details>
+            <summary>View details</summary>
+            <ul>
+              <li><b>Project development:</b> Developed a Green Climate Fund readiness project for India's blue economy, a river-restoration concept note for the Barak River, and a USAID-funded landscape-management proposal.</li>
+              <li><b>Narmada Landscape Restoration Project:</b> Worked end-to-end, developing a first-of-its-kind PES model to mitigate forest-fire risk and leading the "forest-friendly village" community-forestry initiative.</li>
+              <li><b>Incentive design:</b> Built a carbon-based incentivisation model for Narmada watershed communities with advocacy agencies and private-sector partners.</li>
+              <li><b>NTFP value chains:</b> Conducted Non-Timber Forest Produce value-chain analysis across two districts and linked products with urban buyers.</li>
+              <li><b>Partnerships:</b> Coordinated with IIFM, MoEFCC, Ministry of Jal Shakti, IUCN, University of Maryland and IIT; presented at water-governance roundtables.</li>
+            </ul>
+          </details>
+        </div>
+      </div>
+
+      <div class="job reveal">
+        <div class="when">Apr 2021 – Nov 2021</div>
+        <div>
+          <h3>Project Executive</h3>
+          <div class="org">Action for Social Advancement · Madhya Pradesh, India</div>
+          <details>
+            <summary>View details</summary>
+            <ul>
+              <li>Conducted scoping and feasibility assessments of forest bio-economy opportunities in Sidhi District, evaluating biomass and NTFP value chains for viable business models.</li>
+              <li>Integrated biomass and forest-derived waste management into planning for a forest-dependent district.</li>
+              <li>Coordinated with World Resources Institute and district government departments; prepared donor reports.</li>
+            </ul>
+          </details>
+        </div>
+      </div>
+
+      <div class="job reveal">
+        <div class="when">Jan 2020 – Apr 2020</div>
+        <div>
+          <h3>Consultant — Sociologist</h3>
+          <div class="org">Wildlife Institute of India · Meghalaya, India</div>
+          <details>
+            <summary>View details</summary>
+            <ul>
+              <li>Planned community-led landscape restoration in Meghalaya.</li>
+              <li>Led survey design, data analysis and report preparation.</li>
+            </ul>
+          </details>
+        </div>
+      </div>
+
+      <div class="job reveal">
+        <div class="when">Apr 2018 – Aug 2019</div>
+        <div>
+          <h3>Research Coordinator</h3>
+          <div class="org">Madhya Pradesh Forest Department (MPFD) · India</div>
+          <details>
+            <summary>View details</summary>
+            <ul>
+              <li>Supported NTFP value-chain assessment, contributing to forest-based livelihood and bio-economy initiatives.</li>
+              <li>Coordinated state research bodies across water, soil and forestry sectors.</li>
+              <li>Directed field teams on survey design and data collection; liaised with private agencies on forestry product linkages.</li>
+              <li>Prepared reports and minutes for MPFD's Research and Extension Wing.</li>
+            </ul>
+          </details>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="wrap">
+    <div class="sec-label">03 · Selected Work</div>
+    <h2 class="sec-title">Schemes, models and studies with real-world stakes.</h2>
+    <p class="sec-intro">A selection of the initiatives I've designed and delivered across nature-based solutions and climate finance.</p>
+
+    <div class="proj-grid reveal">
+      <div class="proj">
+        <div class="code">P01</div>
+        <h3>Rwanda PES Scheme Design</h3>
+        <p>Leading the design of a Payment for Ecosystem Services scheme to reward sustainable natural-resource management, including a governance framework and pre-feasibility valuation.</p>
+        <div class="tags"><span class="tag">PES design</span><span class="tag">Valuation</span><span class="tag">Governance</span></div>
+      </div>
+      <div class="proj">
+        <div class="code">P02</div>
+        <h3>Narmada Forest-Fire PES Model</h3>
+        <p>Developed a first-of-its-kind Payment for Ecosystem Services model to mitigate forest-fire risk in the Narmada landscape, paired with community forestry.</p>
+        <div class="tags"><span class="tag">PES</span><span class="tag">Fire risk</span><span class="tag">Community forestry</span></div>
+      </div>
+      <div class="proj">
+        <div class="code">P03</div>
+        <h3>Carbon Incentivisation Model</h3>
+        <p>Built a carbon-based incentive model for Narmada watershed communities, developed with international advocacy agencies and private-sector partners.</p>
+        <div class="tags"><span class="tag">Carbon</span><span class="tag">Incentives</span><span class="tag">Watershed</span></div>
+      </div>
+      <div class="proj">
+        <div class="code">P04</div>
+        <h3>GCF Blue-Economy Readiness</h3>
+        <p>Developed a Green Climate Fund readiness project for India's blue economy, plus a river-restoration concept note for the Barak River.</p>
+        <div class="tags"><span class="tag">Climate finance</span><span class="tag">GCF</span><span class="tag">Blue economy</span></div>
+      </div>
+      <div class="proj">
+        <div class="code">P05</div>
+        <h3>NTFP Value-Chain Analysis</h3>
+        <p>Analysed Non-Timber Forest Produce value chains across project districts and linked forest products with buyers in cities to strengthen livelihoods.</p>
+        <div class="tags"><span class="tag">NTFP</span><span class="tag">Value chains</span><span class="tag">Livelihoods</span></div>
+      </div>
+      <div class="proj">
+        <div class="code">P06</div>
+        <h3>Forest Bio-Economy Feasibility</h3>
+        <p>Scoped biomass and NTFP opportunities in Sidhi District, evaluating value chains for viable, forest-dependent business models.</p>
+        <div class="tags"><span class="tag">Bioeconomy</span><span class="tag">Biomass</span><span class="tag">Feasibility</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="wrap">
+    <div class="sec-label">04 · Capabilities</div>
+    <h2 class="sec-title">A toolkit spanning economics, ecology and delivery.</h2>
+    <div class="skill-cols reveal">
+      <div>
+        <h4>Economics & Valuation</h4>
+        <ul>
+          <li>Payment for Ecosystem Services (PES)</li>
+          <li>InVEST ecosystem-service modelling</li>
+          <li>Cost-Benefit Analysis (CBA)</li>
+          <li>Disaster risk economics</li>
+          <li>Ecosystem-service valuation</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Nature & Landscapes</h4>
+        <ul>
+          <li>Nature-Based Solutions (NBS)</li>
+          <li>Landscape & watershed restoration</li>
+          <li>Forest bio-economy & NTFP value chains</li>
+          <li>Geographic Information Systems (GIS)</li>
+          <li>Climate finance</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Delivery & Collaboration</h4>
+        <ul>
+          <li>Project management</li>
+          <li>Proposal & concept-note development</li>
+          <li>Donor coordination & reporting</li>
+          <li>Monitoring, Evaluation & Learning</li>
+          <li>Stakeholder engagement</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <div class="wrap">
+    <div class="sec-label">05 · Education & Recognition</div>
+    <h2 class="sec-title">Foundations in engineering, conservation and practice.</h2>
+
+    <div class="reveal">
+      <div class="edu-item">
+        <div class="yr">2016 – 2018</div>
+        <div>
+          <h3>MBA, Conservation Management</h3>
+          <div class="inst">Indian Institute of Forest Management</div>
+        </div>
+      </div>
+      <div class="edu-item">
+        <div class="yr">2011 – 2015</div>
+        <div>
+          <h3>B.E. Electrical Engineering</h3>
+          <div class="inst">Chhattisgarh Swami Vivekanand Technical University</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="certs reveal">
+      <h4>Certifications & Seminars</h4>
+      <div class="cert-list">
+        <span class="cert">Climate Change and AI</span>
+        <span class="cert">Sustainable Financial Taxonomy</span>
+        <span class="cert">PM4DEV — Project Management</span>
+        <span class="cert">Article 6.2 Paris Agreement (UNEP)</span>
+        <span class="cert">World Water Week 2024, Stockholm — Presenter</span>
+        <span class="cert">GCF Trainer Certificate</span>
+        <span class="cert">Sustainable Forestry — KFRI</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <div class="wrap">
+    <div class="sec-label">06 · Contact</div>
+    <h2 class="sec-title">Let's design conservation that pays.</h2>
+    <p class="sec-intro">Open to roles and collaborations across environmental economics, Nature-Based Solutions, PES, climate finance and landscape restoration.</p>
+    <div class="contact-links">
+      <a class="cl" href="mailto:neeraj.gautam@gggi.org"><div class="lbl">Email</div><div class="val">neeraj.gautam@gggi.org</div></a>
+      <a class="cl" href="mailto:neegam18@gmail.com"><div class="lbl">Personal email</div><div class="val">neegam18@gmail.com</div></a>
+      <a class="cl" href="tel:+919907303865"><div class="lbl">Phone</div><div class="val">+91 99073 03865</div></a>
+      <a class="cl" href="#"><div class="lbl">Based in</div><div class="val">Kigali, Rwanda</div></a>
+    </div>
+    <p class="avail"><b>Availability:</b> Based in Kigali, Rwanda · Open to opportunities across nature-based solutions and climate finance.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-inner">
+    <div>Neeraj Gautam · Environmental Economist</div>
+    <div><a href="#top">Back to top ↑</a></div>
+  </div>
+</footer>
+
+<script>
+  // scroll reveal
+  const io=new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}});
+  },{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+  // close mobile menu on link tap
+  document.querySelectorAll('nav a').forEach(a=>a.addEventListener('click',()=>{
+    if(window.innerWidth<=760){document.querySelector('nav ul').style.display='none'}
+  }));
+</script>
+</body>
+</html>
