@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Neeraj Gautam | Environmental Economist &middot; Forest Bioeconomy</title>
+<meta name="description" content="Environmental economist working across forest bioeconomy, biomass and NTFP value chains, Nature-Based Solutions, ecosystem-service valuation and climate finance.">
+<meta property="og:title" content="Neeraj Gautam | Environmental Economist &middot; Forest Bioeconomy">
+<meta property="og:description" content="Turning forests, biomass and value chains into livelihoods that last. Seven years across India and Rwanda.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#13211b;--paper:#ffffff;--paper-2:#f4f7f4;--paper-3:#eef2ee;
+    --accent:#0f6e56;--accent-dark:#0a5040;--accent-tint:#e6f0ea;
+    --line:#e2e6e1;--muted:#5c6862;
+    --display:"Space Grotesk",system-ui,sans-serif;--body:"Inter",system-ui,sans-serif;--mono:"IBM Plex Mono",monospace;--maxw:1080px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--paper);color:var(--ink);font-family:var(--body);line-height:1.65;font-size:17px;-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}
+  img{max-width:100%;display:block}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
+  .imgslot{position:relative;background:var(--paper-2);border:1px dashed var(--accent);border-radius:4px;overflow:hidden;display:flex;align-items:center;justify-content:center;min-height:180px}
+  .imgslot img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0;z-index:1}
+  .imgslot img.zoomable{cursor:zoom-in}
+  .imgslot .ph{font-family:var(--mono);font-size:12px;color:var(--accent);text-align:center;padding:18px;line-height:1.5;z-index:0}
+  header.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  .nav-inner{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .brand{font-family:var(--display);font-weight:600;font-size:18px;letter-spacing:-.01em}
+  .brand span{color:var(--accent)}
+  nav ul{display:flex;gap:26px;list-style:none}
+  nav a{font-size:14px;color:var(--muted);transition:color .2s}
+  nav a:hover{color:var(--accent)}
+  .menu-btn{display:none;background:none;border:none;font-size:22px;cursor:pointer;color:var(--ink)}
+  @media(max-width:860px){nav ul{display:none}.menu-btn{display:block}}
+  .hero{padding:76px 0 30px;position:relative}
+  .hero-grid{display:grid;grid-template-columns:1.35fr .65fr;gap:48px;align-items:center}
+  @media(max-width:860px){.hero-grid{grid-template-columns:1fr;gap:32px}}
+  .eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:20px}
+  .hero h1{font-family:var(--display);font-weight:600;font-size:clamp(32px,5vw,54px);line-height:1.06;letter-spacing:-.02em;max-width:16ch;margin-bottom:24px}
+  .hero h1 em{font-style:normal;color:var(--accent)}
+  .hero p.lede{font-size:18px;color:var(--muted);max-width:52ch;margin-bottom:30px}
+  .cta-row{display:flex;gap:12px;flex-wrap:wrap}
+  .btn{font-family:var(--body);font-size:15px;font-weight:500;padding:12px 22px;border-radius:4px;cursor:pointer;transition:all .2s;border:1px solid var(--ink);display:inline-block}
+  .btn-solid{background:var(--accent);color:#fff;border-color:var(--accent)}
+  .btn-solid:hover{background:var(--accent-dark);border-color:var(--accent-dark)}
+  .btn-ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+  .btn-ghost:hover{background:var(--paper-2);border-color:var(--muted)}
+  .hero-photo{position:relative}
+  .hero-photo .imgslot{min-height:320px;border-radius:6px;aspect-ratio:4/5}
+  .hero-photo .cap{font-family:var(--mono);font-size:11px;color:var(--muted);margin-top:10px;text-align:center}
+  .hero-meta{display:flex;gap:34px;margin-top:40px;flex-wrap:wrap}
+  .hero-meta div{border-left:2px solid var(--accent);padding-left:14px}
+  .hero-meta .k{font-family:var(--display);font-size:20px;font-weight:600}
+  .hero-meta .l{font-size:13px;color:var(--muted)}
+  .why{background:var(--paper-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .why .wrap{padding-top:36px;padding-bottom:36px}
+  .why .lbl{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:12px}
+  .why p{font-family:var(--display);font-size:clamp(19px,2.4vw,25px);font-weight:400;line-height:1.4;color:var(--ink);max-width:44ch}
+  .why p b{font-weight:600;color:var(--accent)}
+  section{padding:70px 0;border-top:1px solid var(--line)}
+  .sec-label{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:16px}
+  .sec-title{font-family:var(--display);font-weight:600;font-size:clamp(25px,3.4vw,37px);line-height:1.12;letter-spacing:-.015em;max-width:22ch;margin-bottom:20px}
+  .sec-intro{color:var(--muted);max-width:60ch;margin-bottom:42px;font-size:18px}
+  .about-grid{display:grid;grid-template-columns:1.25fr 1fr;gap:48px;align-items:start}
+  @media(max-width:860px){.about-grid{grid-template-columns:1fr}}
+  .about-lead{font-family:var(--display);font-size:22px;line-height:1.4;font-weight:400;margin-bottom:20px}
+  .about-body p{color:var(--muted);margin-bottom:15px}
+  .about-more{max-height:0;overflow:hidden;transition:max-height .5s ease}
+  .about-more.open{max-height:900px}
+  .read-toggle{background:none;border:none;cursor:pointer;font-family:var(--body);font-size:14px;font-weight:500;color:var(--accent);padding:4px 0;margin-top:6px}
+  .about-photo .imgslot{aspect-ratio:1;border-radius:6px;min-height:220px}
+  .about-photo .cap{font-family:var(--mono);font-size:11px;color:var(--muted);margin-top:10px}
+  .define{margin-top:26px;border-top:2px solid var(--accent);padding-top:16px}
+  .define .word{font-family:var(--display);font-size:19px;font-weight:600}
+  .define .pos{font-style:italic;color:var(--muted);font-size:15px}
+  .define p{font-size:14.5px;color:var(--muted);margin-top:6px}
+  .value-cards{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);margin-top:26px;border-radius:4px;overflow:hidden}
+  .vc{background:var(--paper);padding:20px 18px}
+  .vc .n{font-family:var(--mono);font-size:12px;color:var(--accent)}
+  .vc h4{font-family:var(--display);font-size:16px;font-weight:600;margin:5px 0}
+  .vc p{font-size:13.5px;color:var(--muted);margin:0}
+  @media(max-width:480px){.value-cards{grid-template-columns:1fr}}
+  .job{display:grid;grid-template-columns:170px 1fr;gap:28px;padding:24px 0;border-top:1px solid var(--line)}
+  .job:first-child{border-top:none}
+  .job .when{font-family:var(--mono);font-size:13px;color:var(--muted);padding-top:4px}
+  .job h3{font-family:var(--display);font-size:19px;font-weight:600;letter-spacing:-.01em}
+  .job .org{color:var(--accent);font-weight:500;font-size:14.5px;margin:2px 0 10px}
+  .job summary{cursor:pointer;font-size:14px;color:var(--accent);font-weight:500;list-style:none;display:inline-flex;align-items:center;gap:6px}
+  .job summary::-webkit-details-marker{display:none}
+  .job summary::after{content:"\2192";transition:transform .2s}
+  .job details[open] summary::after{transform:rotate(90deg)}
+  .job ul{margin:14px 0 0;padding-left:18px}
+  .job li{font-size:14.5px;color:var(--muted);margin-bottom:9px}
+  .job li b{color:var(--ink);font-weight:600}
+  @media(max-width:680px){.job{grid-template-columns:1fr;gap:8px}}
+  .studies{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+  @media(max-width:720px){.studies{grid-template-columns:1fr}}
+  .study{border:1px solid var(--line);background:var(--paper);border-radius:6px;overflow:hidden}
+  .study .imgslot{border:none;border-bottom:1px dashed var(--accent);border-radius:0;aspect-ratio:16/10;min-height:200px}
+  .study .body{padding:20px 22px}
+  .study .kicker{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+  .study h3{font-family:var(--display);font-size:19px;font-weight:600;margin:7px 0 8px;line-height:1.25}
+  .study p{font-size:14.5px;color:var(--muted)}
+  .proj-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:4px;overflow:hidden}
+  @media(max-width:720px){.proj-grid{grid-template-columns:1fr}}
+  .proj{background:var(--paper);padding:26px 24px;transition:background .2s;cursor:pointer;text-align:left;border:none;font-family:inherit;width:100%}
+  .proj:hover{background:var(--paper-2)}
+  .proj .code{font-family:var(--mono);font-size:12px;color:var(--accent)}
+  .proj h3{font-family:var(--display);font-size:18px;font-weight:600;margin:8px 0 10px;line-height:1.25;color:var(--ink)}
+  .proj p{font-size:14.5px;color:var(--muted);margin-bottom:14px}
+  .proj .open-lbl{font-size:13px;color:var(--accent);font-weight:500}
+  .proj .open-lbl::after{content:" \2192"}
+  .tags{display:flex;flex-wrap:wrap;gap:7px}
+  .tag{font-family:var(--mono);font-size:11px;background:var(--accent-tint);border:1px solid var(--line);padding:4px 9px;border-radius:3px;color:var(--accent-dark)}
+  .modal-bg{position:fixed;inset:0;background:rgba(19,33,27,.5);backdrop-filter:blur(3px);z-index:100;display:none;align-items:flex-start;justify-content:center;overflow-y:auto;padding:40px 18px}
+  .modal-bg.open{display:flex}
+  .modal{background:var(--paper);max-width:760px;width:100%;border-radius:6px;position:relative;box-shadow:0 24px 60px rgba(0,0,0,.24)}
+  .modal-x{position:absolute;top:14px;right:16px;background:var(--paper-2);border:1px solid var(--line);width:34px;height:34px;border-radius:50%;cursor:pointer;font-size:18px;line-height:1;color:var(--ink)}
+  .modal-head{padding:34px 36px 22px;border-bottom:1px solid var(--line)}
+  .modal-head .kicker{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
+  .modal-head h2{font-family:var(--display);font-size:26px;font-weight:600;margin:8px 0 4px;line-height:1.15}
+  .modal-body{padding:26px 36px 36px}
+  .modal-body .imgslot{aspect-ratio:16/9;min-height:220px;margin:18px 0;border-radius:4px}
+  .modal-body h4{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin:22px 0 8px}
+  .modal-body p{color:var(--muted);margin-bottom:12px;font-size:15.5px}
+  .modal-body .tags{margin-top:18px}
+  .impact{background:var(--accent-tint);border-left:3px solid var(--accent);padding:14px 18px;margin:18px 0;border-radius:0 4px 4px 0}
+  .impact .lbl{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent-dark)}
+  .impact .txt{font-family:var(--display);font-size:17px;font-weight:500;color:var(--ink);margin-top:3px;line-height:1.4}
+  .quote{border-left:3px solid var(--accent);padding:6px 0 6px 18px;margin:18px 0;font-family:var(--display);font-size:17px;color:var(--ink)}
+  .quote .who{display:block;font-family:var(--body);font-size:13px;color:var(--muted);margin-top:6px}
+  @media(max-width:520px){.modal-head,.modal-body{padding-left:22px;padding-right:22px}}
+  .skill-cols{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}
+  .pubs{display:flex;flex-direction:column;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:4px;overflow:hidden}
+  .pub{background:var(--paper);padding:20px 24px;display:grid;grid-template-columns:120px 1fr auto;gap:20px;align-items:baseline;transition:background .2s}
+  .pub:hover{background:var(--paper-2)}
+  .pub .yr{font-family:var(--mono);font-size:12px;color:var(--accent)}
+  .pub .main .t{font-family:var(--display);font-size:16px;font-weight:600;line-height:1.3}
+  .pub .main .d{font-size:13.5px;color:var(--muted);margin-top:3px}
+  .pub .type{font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);white-space:nowrap}
+  @media(max-width:680px){.pub{grid-template-columns:1fr;gap:5px}.pub .type{order:-1}}
+  @media(max-width:720px){.skill-cols{grid-template-columns:1fr}}
+  .skill-cols h4{font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:16px;padding-bottom:10px;border-bottom:1px solid var(--line)}
+  .skill-cols ul{list-style:none}
+  .skill-cols li{font-size:15px;padding:7px 0;color:var(--ink);border-bottom:1px dotted var(--line)}
+  .edu-item{display:grid;grid-template-columns:150px 1fr;gap:28px;padding:20px 0;border-top:1px solid var(--line)}
+  .edu-item:first-of-type{border-top:none}
+  .edu-item .yr{font-family:var(--mono);font-size:13px;color:var(--muted)}
+  .edu-item h3{font-family:var(--display);font-size:18px;font-weight:600}
+  .edu-item .inst{color:var(--accent);font-size:14.5px;margin-top:2px}
+  @media(max-width:680px){.edu-item{grid-template-columns:1fr;gap:6px}}
+  .certs{margin-top:38px}
+  .certs h4{font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:16px}
+  .cert-list{display:flex;flex-wrap:wrap;gap:10px}
+  .cert{font-size:13.5px;background:var(--paper-2);border:1px solid var(--line);padding:8px 14px;border-radius:3px}
+  .contact{background:var(--ink);color:#eaf0ec;border-top:none}
+  .contact .sec-label{color:#7fd1a8}.contact .sec-title{color:#fff}.contact .sec-intro{color:#b9c6bf}
+  .contact-links{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:#25382f;border:1px solid #25382f;max-width:640px;border-radius:4px;overflow:hidden}
+  @media(max-width:520px){.contact-links{grid-template-columns:1fr}}
+  .cl{background:var(--ink);padding:20px 22px;transition:background .2s}
+  .cl:hover{background:#1c2e26}
+  .cl .lbl{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#7fd1a8}
+  .cl .val{font-size:15px;margin-top:5px;word-break:break-word}
+  .avail{margin-top:30px;font-size:14px;color:#b9c6bf}.avail b{color:#fff}
+  footer{background:var(--ink);color:#8a9a92;padding:26px 0;border-top:1px solid #25382f;font-size:13px}
+  .footer-inner{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+  .lightbox{position:fixed;inset:0;background:rgba(10,18,15,.92);z-index:200;display:none;align-items:center;justify-content:center;padding:30px;cursor:zoom-out}
+  .lightbox.open{display:flex}
+  .lightbox img{max-width:95%;max-height:92%;border-radius:4px;box-shadow:0 20px 60px rgba(0,0,0,.5)}
+  .lightbox .lx{position:absolute;top:18px;right:22px;color:#fff;font-size:30px;cursor:pointer;line-height:1;background:none;border:none}
+  .reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+  .reveal.in{opacity:1;transform:none}
+  .hero .eyebrow,.hero h1,.hero .lede,.hero .cta-row,.hero .hero-meta,.hero-photo{opacity:0;transform:translateY(16px);animation:rise .7s ease forwards}
+  .hero h1{animation-delay:.08s}.hero .lede{animation-delay:.16s}.hero .cta-row{animation-delay:.24s}.hero .hero-meta{animation-delay:.32s}.hero-photo{animation-delay:.2s}
+  @keyframes rise{to{opacity:1;transform:none}}
+  @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}.hero .eyebrow,.hero h1,.hero .lede,.hero .cta-row,.hero .hero-meta,.hero-photo{opacity:1;transform:none;animation:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<a id="top"></a>
+<header class="nav"><div class="wrap nav-inner">
+  <div class="brand">Neeraj <span>Gautam</span></div>
+  <nav><ul>
+    <li><a href="#about">About</a></li><li><a href="#experience">Experience</a></li>
+    <li><a href="#studies">Studies</a></li><li><a href="#projects">Projects</a></li>
+    <li><a href="#publications">Publications</a></li><li><a href="#skills">Skills</a></li><li><a href="#contact">Contact</a></li>
+  </ul></nav>
+  <button class="menu-btn" aria-label="Menu" onclick="var u=document.querySelector('nav ul');u.style.display=(u.style.display==='flex'?'none':'flex')">&#9776;</button>
+</div></header>
+
+<section class="hero">
+  <div class="wrap"><div class="hero-grid">
+    <div>
+      <div class="eyebrow">Environmental Economist &middot; Forest Bioeconomy &amp; Nature-Based Solutions</div>
+      <h1>Turning forests and their <em>value chains</em> into livelihoods that last.</h1>
+      <p class="lede">Seven years turning forest resources and ecosystem science into workable economics &mdash; building biomass and non-timber value chains, designing incentive schemes, and financing restoration that pays the communities closest to the land.</p>
+      <div class="cta-row"><a class="btn btn-solid" href="#studies">See my work</a><a class="btn btn-ghost" href="#contact">Get in touch</a><a class="btn btn-ghost" href="cv.pdf" target="_blank">Download CV</a></div>
+      <div class="hero-meta">
+        <div><div class="k">7 years</div><div class="l">across India &amp; Rwanda</div></div>
+        <div><div class="k">Bioeconomy</div><div class="l">value chains &amp; NBS</div></div>
+        <div><div class="k">Valuation</div><div class="l">InVEST, CBA, PES</div></div>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <div class="imgslot"><img src="images/profile.jpg" alt="Neeraj Gautam" onerror="imgFallback(this)"><div class="ph">YOUR PHOTO<br>upload images/profile.jpg</div></div>
+      <div class="cap">Add a portrait &mdash; see the notes I sent</div>
+    </div>
+  </div></div>
+</section>
+
+<section class="why" style="border-top:none;padding:0"><div class="wrap">
+  <div class="lbl">Why bioeconomy</div>
+  <p>The fastest way to keep a forest standing is to make its <b>sustainable use worth more than its clearing</b>. I build the value chains and economics that turn biomass, non-timber produce and forest residues into income for local communities &mdash; and a reason to conserve.</p>
+</div></section>
+
+<section id="about"><div class="wrap">
+  <div class="sec-label">01 &middot; About</div>
+  <h2 class="sec-title">An economist who works where forests, economics and livelihoods meet.</h2>
+  <div class="about-grid reveal">
+    <div class="about-body">
+      <p class="about-lead">I'm an environmental economist who fell for the idea that a forest is worth protecting when the people around it earn more from keeping it alive than from cutting it down.</p>
+      <p>My path started in an unlikely place &mdash; an electrical engineering degree. But somewhere between circuits and systems, I became far more curious about forests, rivers and the communities who depend on them. That curiosity carried me into an MBA in Conservation Management, and then into the field.</p>
+      <div class="about-more" id="aboutMore">
+        <p>For seven years I've worked at the meeting point of ecology, economics and people &mdash; scoping forest bio-economy opportunities in the biomass-rich districts of Madhya Pradesh, creating value chains for forest products like lac resin and leaf plates pressed from Butea monosperma, and setting up the business incubation to carry them to market. Today, in Rwanda, I develop bioeconomy programmes and design incentive schemes for wetland and catchment restoration.</p>
+        <p>I've spent long days walking value chains with forest communities, sitting in district offices negotiating restoration and grassland-management plans, and long nights building the InVEST models and cost-benefit analyses that turn those conversations into numbers a government can fund &mdash; and defend. I care about the whole arc: the resource, the value chain that turns it into income, and the economics that makes conservation the rational choice. Gender equality and social inclusion run through all of it, because a value chain only works if it works for everyone in it.</p>
+        <p>What keeps me going is a simple conviction &mdash; that the fairest climate solutions are the ones where the community closest to the land also benefits most from keeping it healthy.</p>
+      </div>
+      <button class="read-toggle" id="readToggle" onclick="toggleMore()">Read more &darr;</button>
+      <div class="define"><span class="word">Gautam</span> <span class="pos">(noun)</span><p>An economist who counts what usually goes uncounted &mdash; the value of standing forests, non-timber produce and forest residues &mdash; and turns it into income that makes conservation pay.</p></div>
+    </div>
+    <div class="about-photo">
+      <div class="imgslot"><img src="images/community.jpg" alt="Fieldwork with communities on value-chain development" onerror="imgFallback(this)"><div class="ph">FIELD PHOTO<br>upload images/community.jpg<br>(you with communities)</div></div>
+      <div class="cap">In the field &mdash; value-chain development with forest communities.</div>
+      <div class="value-cards">
+        <div class="vc"><div class="n">01</div><h4>Value chains</h4><p>Biomass and NTFP turned into income and market linkages.</p></div>
+        <div class="vc"><div class="n">02</div><h4>Valuation</h4><p>InVEST, CBA and ecosystem-service valuation.</p></div>
+        <div class="vc"><div class="n">03</div><h4>Incentives</h4><p>PES and carbon models that reward stewardship.</p></div>
+        <div class="vc"><div class="n">04</div><h4>Delivery</h4><p>Budgets, donors and partners, kept on track.</p></div>
+      </div>
+    </div>
+  </div>
+</div></section>
+
+<section id="experience"><div class="wrap">
+  <div class="sec-label">02 &middot; Experience</div>
+  <h2 class="sec-title">A path through research, government and green-growth institutions.</h2>
+  <p class="sec-intro">Follow the timeline and open each role to see the work, responsibilities and outcomes behind it.</p>
+  <div class="timeline">
+    <div class="job reveal"><div class="when">Jun 2025 &ndash; Present</div><div><h3>Environmental Economist</h3><div class="org">Global Green Growth Institute (GGGI) &middot; Kigali, Rwanda</div><details><summary>View details</summary><ul><li><b>Bioeconomy project development:</b> Develop project concepts and a bioeconomy programme for western Rwanda (for the Government of Denmark), alongside wetland and catchment restoration initiatives (KGNDTF Window 2).</li><li><b>PES scheme design:</b> Technical lead for the design of a Payment for Ecosystem Services scheme, applying lessons from prior PES work in India &mdash; and successfully defended the pre-feasibility study to government counterparts.</li><li><b>Blended finance:</b> Support the development of blended-finance pathways to fund conservation outcomes at scale.</li><li><b>Economic analysis:</b> Conduct economic analysis and ecosystem-service valuation to inform scheme design under the pre-feasibility study.</li><li><b>Governance, advocacy &amp; stakeholder engagement:</b> Lead the PES governance framework and drive adoption with government and private-sector stakeholders, securing private buy-in, with gender equality and social inclusion (GESI) woven throughout.</li><li><b>Procurement &amp; contracting:</b> Prepare terms of reference and lead the onboarding of consultants and service providers.</li><li><b>Budget, donor &amp; MEL:</b> Monitor expenditure, lead donor reporting, and serve as interim Monitoring, Evaluation and Learning focal point.</li></ul></details></div></div>
+    <div class="job reveal"><div class="when">Nov 2021 &ndash; Jun 2025</div><div><h3>Senior Project Assistant</h3><div class="org">Global Green Growth Institute (GGGI) &middot; New Delhi / Madhya Pradesh, India</div><details><summary>View details</summary><ul><li><b>Bioeconomy value chains:</b> Created value chains for forest-based products &mdash; lac resin and leaf plates pressed from Butea monosperma (Palash) &mdash; and set up business incubation to link community enterprises with urban buyers.</li><li><b>Narmada Landscape Restoration:</b> Worked end-to-end &mdash; developed a first-of-its-kind PES model to mitigate forest-fire risk, led the "forest-friendly village" community-forestry initiative, ran NTFP value-chain analysis across two districts, and supported grassland-management initiatives.</li><li><b>Incentive design:</b> Built a carbon-based incentivisation model for Narmada watershed communities with international advocacy agencies and private-sector partners in Indore.</li><li><b>Project development:</b> Developed a Green Climate Fund readiness project for India's blue economy, a river-restoration concept note for the Barak River, and a USAID-funded landscape-management proposal.</li><li><b>Partnerships:</b> Managed NGO partners and coordinated with IIFM, MoEFCC, Ministry of Jal Shakti, IUCN, University of Maryland and IIT.</li></ul></details></div></div>
+    <div class="job reveal"><div class="when">Apr 2021 &ndash; Nov 2021</div><div><h3>Project Executive</h3><div class="org">Action for Social Advancement &middot; Madhya Pradesh, India</div><details><summary>View details</summary><ul><li>Conducted scoping and feasibility assessments of forest bio-economy opportunities in Sidhi District, evaluating biomass and NTFP value chains for viable business models.</li><li>Integrated biomass and forest-derived waste management into planning for a forest-dependent district.</li><li>Coordinated with World Resources Institute and district government departments; prepared donor reports.</li></ul></details></div></div>
+    <div class="job reveal"><div class="when">Jan 2020 &ndash; Apr 2020</div><div><h3>Consultant &mdash; Sociologist</h3><div class="org">Wildlife Institute of India &middot; Meghalaya, India</div><details><summary>View details</summary><ul><li>Planned community-led landscape restoration in Meghalaya.</li><li>Led survey design, data analysis and report preparation.</li></ul></details></div></div>
+    <div class="job reveal"><div class="when">Apr 2018 &ndash; Aug 2019</div><div><h3>Research Coordinator</h3><div class="org">Madhya Pradesh Forest Department (MPFD) &middot; India</div><details><summary>View details</summary><ul><li>Supported NTFP value-chain assessment &mdash; including forest produce such as tendu leaf and other non-timber products &mdash; contributing to forest-based livelihood and bio-economy initiatives with market linkages.</li><li>Coordinated state research bodies across water, soil and forestry sectors.</li><li>Directed field teams on survey design and data collection; liaised with private agencies on forestry product linkages.</li><li>Prepared reports and minutes for MPFD's Research and Extension Wing.</li></ul></details></div></div>
+  </div>
+</div></section>
+
+<section id="studies"><div class="wrap">
+  <div class="sec-label">03 &middot; Featured Studies</div>
+  <h2 class="sec-title">From value chains to models &mdash; the evidence behind the work.</h2>
+  <p class="sec-intro">The technical work that turns forest resources and ecosystem value into evidence decision-makers can fund. Click any image to enlarge it. Upload each file and it appears here automatically.</p>
+  <div class="studies reveal">
+    <div class="study"><div class="imgslot"><img class="zoomable" src="images/value-chain.jpg" alt="Biomass and NTFP value-chain analysis" onerror="imgFallback(this)" onclick="zoom(this)"><div class="ph">upload images/value-chain.jpg</div></div><div class="body"><div class="kicker">Bioeconomy &middot; Value Chains</div><h3>Biomass &amp; NTFP value chains</h3><p>Mapping non-timber produce and biomass value chains &mdash; from resource to market linkage &mdash; to build viable, forest-based livelihoods.</p></div></div>
+    <div class="study"><div class="imgslot"><img class="zoomable" src="images/pes-prefeasibility.jpg" alt="PES pre-feasibility study" onerror="imgFallback(this)" onclick="zoom(this)"><div class="ph">upload images/pes-prefeasibility.jpg</div></div><div class="body"><div class="kicker">PES &middot; Pre-Feasibility</div><h3>PES pre-feasibility study</h3><p>Ecosystem-service valuation and cost-benefit analysis assessing whether a scheme can work &mdash; and who should pay whom.</p></div></div>
+    <div class="study"><div class="imgslot"><img class="zoomable" src="images/invest-sediment.jpg" alt="InVEST sediment model output" onerror="imgFallback(this)" onclick="zoom(this)"><div class="ph">upload images/invest-sediment.jpg</div></div><div class="body"><div class="kicker">InVEST &middot; Sediment Delivery</div><h3>Sedimentation modelling</h3><p>Spatial modelling of sediment export and retention to target restoration where it protects water and reservoirs most.</p></div></div>
+    <div class="study"><div class="imgslot"><img class="zoomable" src="images/erosion-model.jpg" alt="Erosion and landscape sustainability model" onerror="imgFallback(this)" onclick="zoom(this)"><div class="ph">upload images/erosion-model.jpg</div></div><div class="body"><div class="kicker">Landscape &middot; Erosion Risk</div><h3>Erosion &amp; landscape sustainability</h3><p>Mapping erosion risk and land-use pressure to prioritise slopes and catchments for restoration.</p></div></div>
+  </div>
+</div></section>
+
+<section id="projects"><div class="wrap">
+  <div class="sec-label">04 &middot; Selected Projects</div>
+  <h2 class="sec-title">Value chains and schemes with real-world stakes.</h2>
+  <p class="sec-intro">Click any project to open the full case study &mdash; the problem, my role, the approach, and the outcome.</p>
+  <div class="proj-grid reveal">
+    <button class="proj" onclick="openModal('m1')"><div class="code">P01</div><h3>Rwanda Forest Bioeconomy</h3><p>Developing a bioeconomy programme for western Rwanda (with the Government of Denmark) that turns biological resources into local income.</p><div class="open-lbl">Open case study</div></button>
+    <button class="proj" onclick="openModal('m2')"><div class="code">P02</div><h3>NTFP Value Chains &amp; Business Incubation</h3><p>Value chains for lac resin and Butea monosperma leaf plates, with business incubation linking community enterprises to urban markets.</p><div class="open-lbl">Open case study</div></button>
+    <button class="proj" onclick="openModal('m3')"><div class="code">P03</div><h3>Forest Bio-Economy Feasibility</h3><p>Scoping biomass and NTFP opportunities in Sidhi District for viable, forest-dependent business models.</p><div class="open-lbl">Open case study</div></button>
+    <button class="proj" onclick="openModal('m4')"><div class="code">P04</div><h3>Narmada Forest-Fire PES Model</h3><p>A first-of-its-kind scheme paying communities to reduce forest-fire risk, with community forestry and grassland management.</p><div class="open-lbl">Open case study</div></button>
+    <button class="proj" onclick="openModal('m5')"><div class="code">P05</div><h3>Rwanda PES Scheme Design</h3><p>Designing a PES scheme for wetland and catchment restoration &mdash; pre-feasibility defended to government, with blended finance and GESI.</p><div class="open-lbl">Open case study</div></button>
+    <button class="proj" onclick="openModal('m6')"><div class="code">P06</div><h3>GCF Blue-Economy Readiness</h3><p>A Green Climate Fund readiness project for India's blue economy, plus a Barak River restoration concept.</p><div class="open-lbl">Open case study</div></button>
+  </div>
+</div></section>
+
+<section id="publications"><div class="wrap">
+  <div class="sec-label">05 &middot; Publications &amp; Presentations</div>
+  <h2 class="sec-title">Selected outputs, presentations and studies.</h2>
+  <p class="sec-intro">A selection of work presented, authored or led. Full documents are available on request. Replace any "on request" note with a real link once your reports or slides are online.</p>
+  <div class="pubs reveal">
+    <div class="pub"><div class="yr">2024</div><div class="main"><div class="t">Narmada Landscape Restoration Project</div><div class="d">Presented at World Water Week 2024, Stockholm &mdash; GGGI.</div></div><div class="type">Presentation</div></div>
+    <div class="pub"><div class="yr">2025</div><div class="main"><div class="t">Rwanda PES Pre-Feasibility Study</div><div class="d">Ecosystem-service valuation and cost-benefit analysis; defended to government counterparts.</div></div><div class="type">Study &middot; on request</div></div>
+    <div class="pub"><div class="yr">2025</div><div class="main"><div class="t">Rwanda Forest Bioeconomy Concept</div><div class="d">Programme concept for western Rwanda, developed with the Government of Denmark.</div></div><div class="type">Concept note &middot; on request</div></div>
+    <div class="pub"><div class="yr">2024</div><div class="main"><div class="t">Barak River Restoration Concept Note</div><div class="d">River-restoration concept developed under GGGI.</div></div><div class="type">Concept note &middot; on request</div></div>
+    <div class="pub"><div class="yr">2023</div><div class="main"><div class="t">GCF Readiness &mdash; India's Blue Economy</div><div class="d">Green Climate Fund readiness project development.</div></div><div class="type">Proposal &middot; on request</div></div>
+    <div class="pub"><div class="yr">2022</div><div class="main"><div class="t">NTFP Value Chains &amp; Carbon Incentive Model</div><div class="d">Value-chain and carbon-based incentive design for Narmada watershed communities.</div></div><div class="type">Technical report &middot; on request</div></div>
+  </div>
+</div></section>
+
+<section id="skills"><div class="wrap">
+  <div class="sec-label">06 &middot; Capabilities</div>
+  <h2 class="sec-title">A toolkit spanning bioeconomy, economics and delivery.</h2>
+  <div class="skill-cols reveal">
+    <div><h4>Bioeconomy &amp; Value Chains</h4><ul><li>Forest bio-economy scoping</li><li>Biomass &amp; residue valorisation</li><li>NTFP value-chain analysis</li><li>Value-added products &amp; market linkage</li><li>Circular bioeconomy principles</li></ul></div>
+    <div><h4>Economics &amp; Valuation</h4><ul><li>Ecosystem-service valuation</li><li>InVEST modelling</li><li>Cost-Benefit Analysis (CBA)</li><li>Payment for Ecosystem Services (PES)</li><li>Climate finance</li></ul></div>
+    <div><h4>Delivery &amp; Collaboration</h4><ul><li>Project management</li><li>Proposal &amp; concept-note development</li><li>Donor coordination &amp; reporting</li><li>GIS &amp; Google Earth Engine</li><li>GESI &amp; stakeholder engagement</li></ul></div>
+  </div>
+</div></section>
+
+<section id="education"><div class="wrap">
+  <div class="sec-label">07 &middot; Education &amp; Recognition</div>
+  <h2 class="sec-title">Foundations in engineering, conservation and practice.</h2>
+  <div class="reveal">
+    <div class="edu-item"><div class="yr">2016 &ndash; 2018</div><div><h3>MBA, Conservation Management</h3><div class="inst">Indian Institute of Forest Management</div></div></div>
+    <div class="edu-item"><div class="yr">2011 &ndash; 2015</div><div><h3>B.E. Electrical Engineering</h3><div class="inst">Chhattisgarh Swami Vivekanand Technical University</div></div></div>
+  </div>
+  <div class="certs reveal"><h4>Certifications &amp; Seminars</h4><div class="cert-list"><span class="cert">Sustainable Forestry &mdash; KFRI</span><span class="cert">Climate Change and AI</span><span class="cert">Sustainable Financial Taxonomy</span><span class="cert">PM4DEV &mdash; Project Management</span><span class="cert">Article 6.2 Paris Agreement (UNEP)</span><span class="cert">World Water Week 2024, Stockholm &mdash; Presenter</span><span class="cert">GCF Trainer Certificate</span></div></div>
+</div></section>
+
+<section id="contact" class="contact"><div class="wrap">
+  <div class="sec-label">08 &middot; Contact</div>
+  <h2 class="sec-title">Let's build a bioeconomy that pays.</h2>
+  <p class="sec-intro">Open to roles and collaborations across forest bioeconomy, biomass and NTFP value chains, Nature-Based Solutions, valuation and climate finance.</p>
+  <div class="contact-links">
+    <a class="cl" href="mailto:neeraj.gautam@gggi.org"><div class="lbl">Email</div><div class="val">neeraj.gautam@gggi.org</div></a>
+    <a class="cl" href="mailto:neegam18@gmail.com"><div class="lbl">Personal email</div><div class="val">neegam18@gmail.com</div></a>
+    <a class="cl" href="tel:+919907303865"><div class="lbl">Phone</div><div class="val">+91 99073 03865</div></a>
+    <a class="cl" href="cv.pdf" target="_blank"><div class="lbl">CV</div><div class="val">Download PDF</div></a>
+  </div>
+  <p class="avail"><b>Availability:</b> Based in Kigali, Rwanda &middot; Open to opportunities across forest bioeconomy and climate finance.</p>
+</div></section>
+
+<footer><div class="wrap footer-inner"><div>Neeraj Gautam &middot; Environmental Economist &middot; Forest Bioeconomy</div><div><a href="#top">Back to top &uarr;</a></div></div></footer>
+
+<div class="modal-bg" id="modalBg" onclick="if(event.target===this)closeModal()">
+  <div class="modal" id="m1" style="display:none"><button class="modal-x" onclick="closeModal()">&times;</button><div class="modal-head"><div class="kicker">Rwanda &middot; 2025&ndash;present &middot; GGGI</div><h2>Rwanda Forest Bioeconomy</h2></div><div class="modal-body"><p>Developing project concepts and a bioeconomy programme for the western region of Rwanda, in partnership with the Government of Denmark &mdash; identifying value chains that turn biological resources into local income while restoring landscapes.</p><div class="imgslot"><img class="zoomable" src="images/case-rwanda-bio.jpg" alt="" onerror="imgFallback(this)" onclick="zoom(this)"><div class="ph">upload images/case-rwanda-bio.jpg</div></div><h4>The opportunity</h4><p>Western Rwanda's forests and biological resources hold real potential for value-added products and jobs &mdash; if the value chains and enabling finance can be built around them.</p><h4>My role</h4><p>I develop the project concepts and programme design, drawing on bioeconomy and value-chain work from India to shape something suited to Rwanda's context.</p><div class="impact"><div class="lbl">Impact</div><div class="txt">Edit me: e.g. "Concept developed for a bioeconomy programme spanning X value chains in western Rwanda."</div></div><div class="tags"><span class="tag">Forest bioeconomy</span><span class="tag">Value chains</span><span class="tag">Programme design</span></div></div></div>
+  <div class="modal" id="m2" style="display:none"><button class="modal-x" onclick="closeModal()">&times;</button><div class="modal-head"><div class="kicker">India &middot; Narmada / Indore &middot; GGGI</div><h2>NTFP Value Chains &amp; Business Incubation</h2></div><div class="modal-body"><p>Created value chains for forest-based products &mdash; lac resin and leaf plates pressed from Butea monosperma (Palash) &mdash; and set up business incubation to help community enterprises reach urban markets, alongside a carbon-based incentive model developed with advocacy agencies and private-sector partners.</p><div class="imgslot"><img class="zoomable" src="images/case-ntfp.jpg" alt="" onerror="imgFallback(this)" onclick="zoom(this)"><div class="ph">upload images/case-ntfp.jpg (great spot for your community photo)</div></div><h4>The challenge</h4><p>Forest communities harvested valuable non-timber produce but captured little of its market value, with no route from raw resource to finished, sellable product.</p><h4>My role</h4><p>I mapped the value chains, identified where value was leaking, incubated community enterprises, and built the market linkages that connected producers to urban demand.</p><div class="impact"><div class="lbl">Impact</div><div class="txt">Edit me: e.g. "X community members engaged across lac and leaf-plate value chains; Y hectares under improved management."</div></div><div class="quote">Edit me: a short line from a producer or cooperative you worked with adds a powerful human note here.<span class="who">&mdash; Name, role / community</span></div><div class="tags"><span class="tag">NTFP</span><span class="tag">Value chains</span><span class="tag">Business incubation</span><span class="tag">Carbon</span></div></div></div>
+  <div class="modal" id="m3" style="display:none"><button class="modal-x" onclick="closeModal()">&times;</button><div class="modal-head"><div class="kicker">India &middot; Sidhi District</div><h2>Forest Bio-Economy Feasibility</h2></div><div class="modal-body"><p>Scoping and feasibility assessment of forest bio-economy opportunities in Sidhi District, evaluating biomass and NTFP value chains for viable business models, paired with restoration activity.</p><div class="imgslot"><img class="zoomable" src="images/case-bioeconomy.jpg" alt="" onerror="imgFallback(this)" onclick="zoom(this)"><div class="ph">upload images/case-bioeconomy.jpg</div></div><h4>The challenge</h4><p>A forest-dependent district with abundant biomass and forest-derived residues, but few viable business models to turn them into local income.</p><h4>My role</h4><p>I assessed biomass and forest-derived waste opportunities and integrated them into district planning and restoration, coordinating with WRI and district departments.</p><div class="impact"><div class="lbl">Impact</div><div class="txt">Edit me: e.g. "Identified X viable biomass/NTFP value chains for a forest-dependent district."</div></div><div class="tags"><span class="tag">Forest bioeconomy</span><span class="tag">Biomass</span><span class="tag">Restoration</span></div></div></div>
+  <div class="modal" id="m4" style="display:none"><button class="modal-x" onclick="closeModal()">&times;</button><div class="modal-head"><div class="kicker">India &middot; Narmada Landscape &middot; GGGI</div><h2>Narmada Forest-Fire PES Model</h2></div><div class="modal-body"><p>A first-of-its-kind Payment for Ecosystem Services model that pays communities to reduce forest-fire risk across the Narmada landscape, alongside a "forest-friendly village" community-forestry initiative and grassland-management work.</p><div class="imgslot"><img class="zoomable" src="images/case-narmada.jpg" alt="" onerror="imgFallback(this)" onclick="zoom(this)"><div class="ph">upload images/case-narmada.jpg</div></div><h4>The challenge</h4><p>Recurrent forest fires degraded the Narmada watershed, but communities had no incentive to invest the effort needed to prevent them.</p><h4>My role</h4><p>I helped develop the PES model, led the community-forestry initiative, ran NTFP value-chain analysis across two districts, and supported grassland management &mdash; presenting the project at World Water Week 2024 in Stockholm.</p><div class="impact"><div class="lbl">Impact</div><div class="txt">Edit me: e.g. "First-of-its-kind fire-risk PES piloted across X villages; Y hectares restored."</div></div><div class="tags"><span class="tag">PES</span><span class="tag">Fire risk</span><span class="tag">Community forestry</span><span class="tag">Grassland</span></div></div></div>
+  <div class="modal" id="m5" style="display:none"><button class="modal-x" onclick="closeModal()">&times;</button><div class="modal-head"><div class="kicker">Rwanda &middot; 2025&ndash;present &middot; GGGI</div><h2>Rwanda PES Scheme Design</h2></div><div class="modal-body"><p>Leading the design of a Payment for Ecosystem Services scheme to reward sustainable natural-resource management and restore Rwanda's wetlands and catchments.</p><div class="imgslot"><img class="zoomable" src="images/case-rwanda.jpg" alt="" onerror="imgFallback(this)" onclick="zoom(this)"><div class="ph">upload images/case-rwanda.jpg (map, model output or field photo)</div></div><h4>The challenge</h4><p>Rwanda's landscapes are under pressure from erosion and land-use change, yet the communities best placed to protect them see little direct reward for doing so.</p><h4>My role</h4><p>I lead the scheme design end-to-end &mdash; the governance framework, stakeholder engagement with government and private actors, and the pre-feasibility study, which I successfully defended to government counterparts. Blended-finance pathways and GESI are built into the design.</p><div class="impact"><div class="lbl">Impact</div><div class="txt">Edit me: e.g. "Pre-feasibility defended to government; scheme design covering X catchments."</div></div><div class="tags"><span class="tag">PES design</span><span class="tag">Valuation</span><span class="tag">Blended finance</span><span class="tag">GESI</span></div></div></div>
+  <div class="modal" id="m6" style="display:none"><button class="modal-x" onclick="closeModal()">&times;</button><div class="modal-head"><div class="kicker">India &middot; Climate Finance &middot; GGGI</div><h2>GCF Blue-Economy Readiness</h2></div><div class="modal-body"><p>A Green Climate Fund readiness project for India's blue economy, plus a river-restoration concept note for the Barak River and a USAID-funded landscape-management proposal.</p><div class="imgslot"><img class="zoomable" src="images/case-gcf.jpg" alt="" onerror="imgFallback(this)" onclick="zoom(this)"><div class="ph">upload images/case-gcf.jpg</div></div><h4>My role</h4><p>I led project development and concept-note preparation, positioning the blue-economy and restoration work for major climate-finance windows.</p><div class="tags"><span class="tag">Climate finance</span><span class="tag">GCF</span><span class="tag">Blue economy</span></div></div></div>
+</div>
+
+<div class="lightbox" id="lightbox" onclick="closeZoom()"><button class="lx" aria-label="Close" onclick="closeZoom()">&times;</button><img id="lightbox-img" src="" alt=""></div>
+
+<script>
+  function imgFallback(img){if(!img.dataset.tried){img.dataset.tried='1';var s=img.getAttribute('src');if(/\.jpg$/i.test(s)){img.src=s.replace(/\.jpg$/i,'.png');return}}img.style.display='none'}
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
+  document.querySelectorAll('nav a').forEach(function(a){a.addEventListener('click',function(){if(window.innerWidth<=860){document.querySelector('nav ul').style.display='none'}})});
+  function toggleMore(){var m=document.getElementById('aboutMore'),b=document.getElementById('readToggle');m.classList.toggle('open');b.innerHTML=m.classList.contains('open')?'Show less &uarr;':'Read more &darr;'}
+  function openModal(id){document.getElementById('modalBg').classList.add('open');document.querySelectorAll('.modal').forEach(function(m){m.style.display='none'});document.getElementById(id).style.display='block';document.body.style.overflow='hidden'}
+  function closeModal(){document.getElementById('modalBg').classList.remove('open');document.body.style.overflow=''}
+  function zoom(img){if(img.style.display==='none')return;var lb=document.getElementById('lightbox');document.getElementById('lightbox-img').src=img.currentSrc||img.src;lb.classList.add('open');document.body.style.overflow='hidden'}
+  function closeZoom(){document.getElementById('lightbox').classList.remove('open');if(!document.getElementById('modalBg').classList.contains('open'))document.body.style.overflow=''}
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'){if(document.getElementById('lightbox').classList.contains('open')){closeZoom()}else{closeModal()}}});
+</script>
+</body>
+</html>
